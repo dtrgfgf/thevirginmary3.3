@@ -1,0 +1,88 @@
+/* تنسيق الخط العام */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+     background: red;/* تعيين صورة الخلفية */
+    background-size: cover; /* تغطية الصفحة بالكامل بالصورة */
+    background-position: center; /* وضع الصورة في منتصف الصفحة */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
+    color: #fff; /* جعل النص أبيض ليظهر فوق الصورة */
+}
+
+/* تنسيق الرأس */
+header {
+    background-color: rgba(0, 35, 102, 0.8); /* خلفية شبه شفافة للرأس */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* تنسيق الشعار (الاسم) */
+.logo h1 {
+    font-size: 14px; /* تصغير حجم الخط */
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; /* خط مخصص للعناوين */
+    text-align: left;
+}
+
+/* تنسيق القائمة */
+nav {
+    background-color: rgba(0, 35, 102, 0.8); /* خلفية شبه شفافة للقائمة */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+/* تنسيق النص الأساسي */
+main {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    position: relative; /* لجعل الزر في المنتصف */
+    height: 100vh; /* لجعل القسم الرئيسي يملأ الشاشة */
+}
+
+/* تنسيق زر البداية */
+.start-button {
+    background-color: blue; /* لون الزر أزرق */
+    color: white; /* لون نص الزر أبيض */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* زوايا دائرية */
+    padding: 15px 30px; /* حشوة الزر */
+    font-size: 18px; /* حجم خط الزر */
+    cursor: pointer; /* شكل المؤشر عند المرور فوق الزر */
+    position: absolute; /* وضع الزر بشكل مطلق */
+    top: 50%; /* نصف ارتفاع الصفحة */
+    left: 50%; /* نصف عرض الصفحة */
+    transform: translate(-50%, -50%); /* مركز الزر تمامًا */
+}
+
+.start-button:hover {
+    background-color: darkblue; /* تغيير لون الزر عند المرور */
+}
